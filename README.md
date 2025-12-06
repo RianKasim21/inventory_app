@@ -24,8 +24,8 @@ Aplikasi manajemen inventaris sederhana berbasis Laravel dengan fitur authentica
 
 1. Clone repository:
    ```bash
-   git clone https://github.com/username/nama-repo.git
-   cd nama-repo
+   git clone https://github.com/RianKasim21/inventory_app.git
+   cd inventory_app
 
 2. Install dependencies:
    ```bash 
