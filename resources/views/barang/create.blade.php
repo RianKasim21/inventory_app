@@ -125,7 +125,6 @@
     </div>
 
     <script>
-        // Calculate total nilai
         function updateTotalNilai() {
             const jumlah = parseFloat(document.getElementById('jumlah').value) || 0;
             const harga = parseFloat(document.getElementById('harga_satuan').value) || 0;
