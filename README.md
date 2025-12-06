@@ -1,6 +1,6 @@
 # Inventory Management App
 
-Aplikasi manajemen inventaris sederhana berbasis Laravel dengan fitur authentication, CRUD data barang, pencarian, sorting, paginasi, serta tampilan responsif menggunakan Tailwind/Bootstrap dan DataTables.
+Aplikasi manajemen inventaris sederhana berbasis Laravel dengan fitur authentication, CRUD data barang, pencarian, sorting, paginasi, serta tampilan responsif menggunakan Tailwind dan DataTables.
 
 ## 🚀 Features
 - Login & Logout (Laravel Breeze)
@@ -9,13 +9,13 @@ Aplikasi manajemen inventaris sederhana berbasis Laravel dengan fitur authentica
 - Validasi input menggunakan Laravel Validation
 - DataTables (searching, sorting, pagination)
 - Middleware `auth` protection
-- Responsive UI menggunakan Tailwind/Bootstrap
+- Responsive UI menggunakan Tailwind
 - Clean code dan struktur sesuai arsitektur MVC
 
 ## 🛠️ Tech Stack
-- **Laravel** 10/11
+- **Laravel** 12
 - **Laravel Breeze** (Authentication)
-- **Tailwind CSS / Bootstrap**
+- **Tailwind CSS**
 - **MySQL**
 - **DataTables**
 - **Eloquent ORM**
@@ -27,14 +27,24 @@ Aplikasi manajemen inventaris sederhana berbasis Laravel dengan fitur authentica
    git clone https://github.com/username/nama-repo.git
    cd nama-repo
 
-2. composer install
+2. Install dependencies:
+   ```bash 
+   composer install
    npm install
    npm run dev
 
-3. cp .env.example .env
+3. Salin file .env dan buat konfigurasi database:
+   ```bash
+   .env.example jadi .env
 
 4. php artisan key:generate
+   ```bash
+   php artisan key:generate
 
-5. php artisan migrate
+5. Buat database baru, kemudian jalankan migration:
+   ```bash
+   php artisan migrate
 
 6. php artisan serve
+   ```bash
+   php artisan serve
