@@ -21,7 +21,6 @@
                         @csrf
                         @method('PUT')
 
-                        <!-- Nama Barang -->
                         <div class="mb-4">
                             <label for="nama" class="block text-sm font-medium text-gray-700 mb-1">
                                 Nama Barang <span class="text-red-500">*</span>
@@ -34,7 +33,6 @@
                             @enderror
                         </div>
 
-                        <!-- Kategori -->
                         <div class="mb-4">
                             <label for="kategori" class="block text-sm font-medium text-gray-700 mb-1">
                                 Kategori <span class="text-red-500">*</span>
@@ -58,7 +56,6 @@
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                            <!-- Jumlah -->
                             <div>
                                 <label for="jumlah" class="block text-sm font-medium text-gray-700 mb-1">
                                     Jumlah/Stok <span class="text-red-500">*</span>

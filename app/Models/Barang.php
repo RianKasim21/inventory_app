@@ -40,6 +40,6 @@ class Barang extends Model
 
     public function getTotalNilaiFormatAttribute(): string
     {
-        return 'Rp ' . number_format($this->total_nilai, 0, ',', '.');
+        return 'Rp ' . number_format($this->totalnilai, 0, ',', '.');
     }
 }

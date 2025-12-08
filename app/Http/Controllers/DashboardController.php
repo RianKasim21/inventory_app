@@ -14,7 +14,7 @@ class DashboardController extends Controller
         $totalStok = Barang::sum('jumlah');
         $totalNilai = Barang::get()->sum('total_nilai');
 
-        $stokRendah = Barang::where('jumlah', '<', 10)->count();
+        $stokRendah = Barang::where('jumlah', '<', 5)->count();
 
         $dataKategori = Barang::select('kategori', DB::raw('count(*) as total'))
             ->groupBy('kategori')

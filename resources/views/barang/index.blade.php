@@ -68,7 +68,21 @@
                                             {{ $barang->kategori }}
                                         </span>
                                     </td>
-                                    <td>{{ $barang->jumlah }}</td>
+                                    <td>
+                                        @if ($barang->jumlah < 5)
+                                            <span class="text-red-600 font-bold">
+                                                {{ $barang->jumlah }}
+                                                <svg class="inline w-4 h-4 text-red-600 ml-1" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                                                </svg>
+                                            </span>
+                                        @else
+                                            {{ $barang->jumlah }}
+                                        @endif
+                                    </td>
                                     <td>{{ $barang->harga_format }}</td>
                                     <td><strong>{{ $barang->total_nilai_format }}</strong></td>
                                     <td>{{ $barang->user->name }}</td>
@@ -228,17 +242,17 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
 
-@if ($barangs->count())
-    <script>
-        $(document).ready(function() {
-            $('#barangTable').DataTable({
-                responsive: true,
-                pageLength: 10,
-                order: [
-                    [0, 'asc']
-                ]
+    @if ($barangs->count())
+        <script>
+            $(document).ready(function() {
+                $('#barangTable').DataTable({
+                    responsive: true,
+                    pageLength: 10,
+                    order: [
+                        [0, 'asc']
+                    ]
+                });
             });
-        });
-    </script>
-@endif
+        </script>
+    @endif
 </x-app-layout>
