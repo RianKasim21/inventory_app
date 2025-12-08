@@ -18,11 +18,6 @@ class Barang extends Model
         'user_id'
     ];
 
-    protected $casts = [
-        'harga_satuan' => 'integer',
-        'jumlah' => 'integer'
-    ];
-
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);

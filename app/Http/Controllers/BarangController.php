@@ -31,11 +31,7 @@ class BarangController extends Controller
             'nama.required' => 'Nama barang wajib diisi',
             'kategori.required' => 'Kategori wajib diisi',
             'jumlah.required' => 'Jumlah wajib diisi',
-            'jumlah.integer' => 'Jumlah harus berupa angka',
-            'jumlah.min' => 'Jumlah tidak boleh kurang dari 0',
             'harga_satuan.required' => 'Harga satuan wajib diisi',
-            'harga_satuan.numeric' => 'Harga satuan harus berupa angka',
-            'harga_satuan.min' => 'Harga satuan tidak boleh kurang dari 0',
         ]);
 
         $validated['user_id'] = Auth::id();
@@ -67,11 +63,7 @@ class BarangController extends Controller
             'nama.required' => 'Nama barang wajib diisi',
             'kategori.required' => 'Kategori wajib diisi',
             'jumlah.required' => 'Jumlah wajib diisi',
-            'jumlah.integer' => 'Jumlah harus berupa angka',
-            'jumlah.min' => 'Jumlah tidak boleh kurang dari 0',
             'harga_satuan.required' => 'Harga satuan wajib diisi',
-            'harga_satuan.numeric' => 'Harga satuan harus berupa angka',
-            'harga_satuan.min' => 'Harga satuan tidak boleh kurang dari 0',
         ]);
 
         $validated['user_id'] = Auth::id();
